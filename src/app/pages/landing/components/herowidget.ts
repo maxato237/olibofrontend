@@ -12,10 +12,8 @@ import { RippleModule } from 'primeng/ripple';
                 <h1 class="w-[90vw] md:w-[55vw] lg:w-[45vw] text-4xl md:text-6xl font-bold text-gray-900 leading-tight font-volkhov">
                     Joue, brille et fais <br />
                     vibrer les terrains
-
                     <span class="relative inline-block">
                         d’Olibo League
-
                         <span class="absolute left-12 -bottom-5 w-full h-3 md:h-4 bg-[url('/img/underline.png')] bg-no-repeat bg-contain"></span>
                     </span>
                 </h1>

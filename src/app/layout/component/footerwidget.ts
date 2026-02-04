@@ -15,10 +15,10 @@ import { Router, RouterModule } from '@angular/router';
                 <!-- Ligue -->
                 <div class="col-span-12 md:col-span-3">
                     <h4 class="text-2xl font-semibold mb-4">La Ligue</h4>
-                    <a class="block text-lg mb-2 cursor-pointer hover:font-bold">À propos</a>
-                    <a class="block text-lg mb-2 cursor-pointer hover:font-bold">Organisation</a>
-                    <a class="block text-lg mb-2 cursor-pointer hover:font-bold">Règlement</a>
-                    <a class="block text-lg cursor-pointer hover:font-bold">Équipes</a>
+                    <a class="block text-lg mb-2 cursor-pointer hover:font-bold" (click)="goToAbout()" >À propos</a>
+                    <a class="block text-lg mb-2 cursor-pointer hover:font-bold" (click)="goToOrganisation()">Organisation</a>
+                    <a class="block text-lg mb-2 cursor-pointer hover:font-bold" (click)="goToRegulations()">Règlement</a>
+                    <a class="block text-lg cursor-pointer hover:font-bold" (click)="goToTeams()">Équipes</a>
                 </div>
 
                 <!-- Compétition -->
@@ -46,4 +46,17 @@ import { Router, RouterModule } from '@angular/router';
 })
 export class FooterWidget {
     constructor(public router: Router) {}
+
+    goToAbout() {
+        this.router.navigate(['/aboutus']);
+    }
+    goToOrganisation() {
+        this.router.navigate(['/organisation']);
+    }
+    goToRegulations() {
+        this.router.navigate(['/règlement']);
+    }
+    goToTeams() {
+        this.router.navigate(['/équipes']);
+    }
 }

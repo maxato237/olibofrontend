@@ -4,13 +4,13 @@ import { RippleModule } from 'primeng/ripple';
 import { StyleClassModule } from 'primeng/styleclass';
 import { ButtonModule } from 'primeng/button';
 import { DividerModule } from 'primeng/divider';
-import { TopbarWidget } from './components/topbarwidget.component';
+import { TopbarWidget } from '../../layout/component/topbarwidget.component';
 import { HeroWidget } from './components/herowidget';
 import { PartnersWidget } from './components/partnerswidget';
 import { AboutWidget } from './components/aboutwidget';
 import { statisticWidget } from './components/statisticwidget';
 import { TestimonialWidget } from './components/testimonialwidget';
-import { FooterWidget } from './components/footerwidget';
+import { FooterWidget } from '../../layout/component/footerwidget';
 
 @Component({
     selector: 'app-landing',
@@ -21,7 +21,7 @@ import { FooterWidget } from './components/footerwidget';
             <div id="home" class="landing-wrapper overflow-hidden">
                 <topbar-widget class="py-8 px-2 mx-0 md:mx-12 lg:px-20 flex items-center justify-between absolute  z-50 bg-transparent w-[95vw]" />
                 <div>
-                    <hero-widget class="pt-10" />
+                    <hero-widget/>
                     <partners-widget />
                     <about-widget />
                     <statistic-widget/>

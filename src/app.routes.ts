@@ -3,7 +3,11 @@ import { AppLayout } from './app/layout/component/app.layout';
 import { Dashboard } from './app/pages/dashboard/dashboard';
 import { Documentation } from './app/pages/documentation/documentation';
 import { Landing } from './app/pages/landing/landing';
+import { Aboutus } from './app/pages/aboutus/aboutus';
 import { Notfound } from './app/pages/notfound/notfound';
+import { Organisation } from './app/pages/organisation/organisation.component';
+import { Regulations } from './app/pages/regulation/regulation';
+import { Teams } from './app/pages/teams/teams';
 
 export const appRoutes: Routes = [
     {
@@ -18,6 +22,10 @@ export const appRoutes: Routes = [
     },
     { path: '', component: Landing },
     { path: 'landing', component: Landing },
+    { path: 'aboutus', component: Aboutus },
+    { path: 'organisation', component: Organisation },
+    { path: 'règlement', component: Regulations },
+    { path: 'équipes', component: Teams },
     { path: 'notfound', component: Notfound },
     { path: 'auth', loadChildren: () => import('./app/pages/auth/auth.routes') },
     { path: '**', redirectTo: '/notfound' }
